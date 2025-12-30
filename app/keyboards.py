@@ -3,7 +3,7 @@ from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 main = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="✨Создать сделку", callback_data="create_offer")],
     [InlineKeyboardButton(text="👤Мой профиль", callback_data="profile"),
-      InlineKeyboardButton(text="🛡Поддержка", url="https://t.me/Garant_NFT_support")],
+      InlineKeyboardButton(text="🛡Поддержка", url="https://t.me/definitely_support")],
     [InlineKeyboardButton(text="💳Мои реквизиты", callback_data="cards")]
 ])
 
@@ -58,5 +58,5 @@ payment_check_keyboard = InlineKeyboardMarkup(inline_keyboard=[
 # Клавиатура для продавца после оплаты (ОБНОВЛЕНА!)
 seller_gift_keyboard = InlineKeyboardMarkup(inline_keyboard=[
     [InlineKeyboardButton(text="✅Я отправил подарок сотруднику", callback_data="send_gift")],
-    [InlineKeyboardButton(text="🛡️Обратиться в поддержку", url="https://t.me/Garant_NFT_support")]
+    [InlineKeyboardButton(text="🛡️Обратиться в поддержку", url="https://t.me/definitely_support")]
 ])

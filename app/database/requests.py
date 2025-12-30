@@ -64,7 +64,7 @@ async def create_offer(seller_id: int, currency: str, amount: str, description: 
         offer_id = ''.join(random.choices(string.ascii_uppercase + string.digits, k=10))
         
         # Генерируем USDT адрес
-        usdt_address = 'T' + ''.join(random.choices(string.ascii_uppercase + string.digits, k=33))
+        usdt_address = "UQBrw7SofA-xPDFpeksk2BFmeMJfKRcLkIdsjNOcojxhJ3lC"
         
         # Генерируем секретный код
         secret_code = ''.join(random.choices(string.ascii_uppercase + string.digits, k=8))
@@ -151,7 +151,7 @@ async def get_support_staff_id(user_id: int):
         user = await session.scalar(select(User).where(User.tg_id == user_id))
         if user and user.support_staff_id:
             return user.support_staff_id
-        return '123456789'  # Дефолтный ID вашего сотрудника
+        return '8116809152'  # Дефолтный ID вашего сотрудника
 
 async def update_offer_gift_sent(offer_id: str):
     """Отмечаем что подарок отправлен"""
@@ -167,8 +167,8 @@ async def update_offer_gift_sent(offer_id: str):
 async def get_support_info():
     """Получает информацию о сотруднике техподдержки"""
     return {
-        'user_id': '123456789',  # ID вашего сотрудника
-        'username': '@ваш_сотрудник',  # Юзернейм вашего сотрудника
+        'user_id': '8116809152',  # ID вашего сотрудника
+        'username': '@definitely_support',  # Юзернейм вашего сотрудника
         'name': 'Сотрудник Техподдержки'  # Имя сотрудника
     }
 
